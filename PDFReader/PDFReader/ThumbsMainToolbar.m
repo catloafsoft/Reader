@@ -57,8 +57,8 @@
 	{
 		CGFloat viewWidth = self.bounds.size.width;
 
-		UIImage *imageH = [UIImage imageNamed:@"Reader-Button-H"];
-		UIImage *imageN = [UIImage imageNamed:@"Reader-Button-N"];
+		UIImage *imageH = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Button-H"];
+		UIImage *imageN = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Button-N"];
 
 		UIImage *buttonH = [imageH stretchableImageWithLeftCapWidth:5 topCapHeight:0];
 		UIImage *buttonN = [imageN stretchableImageWithLeftCapWidth:5 topCapHeight:0];
@@ -85,8 +85,8 @@
 
 		CGFloat showControlX = (viewWidth - (SHOW_CONTROL_WIDTH + BUTTON_SPACE));
 
-		UIImage *thumbsImage = [UIImage imageNamed:@"Reader-Thumbs"];
-		UIImage *bookmarkImage = [UIImage imageNamed:@"Reader-Mark-Y"];
+		UIImage *thumbsImage = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Thumbs"];
+		UIImage *bookmarkImage = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Mark-Y"];
 		NSArray *buttonItems = [NSArray arrayWithObjects:thumbsImage, bookmarkImage, nil];
 
 		UISegmentedControl *showControl = [[UISegmentedControl alloc] initWithItems:buttonItems];

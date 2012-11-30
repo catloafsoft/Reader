@@ -397,7 +397,7 @@
 
 		[imageView addSubview:tintView];
 
-		UIImage *image = [UIImage imageNamed:@"Reader-Mark-Y"];
+		UIImage *image = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Mark-Y"];
 
 		bookMark = [[UIImageView alloc] initWithImage:image];
 

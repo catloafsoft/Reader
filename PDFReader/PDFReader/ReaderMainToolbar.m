@@ -71,8 +71,8 @@
 	{
 		CGFloat viewWidth = self.bounds.size.width;
 
-		UIImage *imageH = [UIImage imageNamed:@"Reader-Button-H"];
-		UIImage *imageN = [UIImage imageNamed:@"Reader-Button-N"];
+		UIImage *imageH = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Button-H"];
+		UIImage *imageN = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Button-N"];
 
 		UIImage *buttonH = [imageH stretchableImageWithLeftCapWidth:5 topCapHeight:0];
 		UIImage *buttonN = [imageN stretchableImageWithLeftCapWidth:5 topCapHeight:0];
@@ -106,7 +106,8 @@
 		UIButton *thumbsButton = [UIButton buttonWithType:UIButtonTypeCustom];
 
 		thumbsButton.frame = CGRectMake(leftButtonX, BUTTON_Y, THUMBS_BUTTON_WIDTH, BUTTON_HEIGHT);
-		[thumbsButton setImage:[UIImage imageNamed:@"Reader-Thumbs"] forState:UIControlStateNormal];
+		[thumbsButton setImage:[UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Thumbs"]
+                      forState:UIControlStateNormal];
 		[thumbsButton addTarget:self action:@selector(thumbsButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 		[thumbsButton setBackgroundImage:buttonH forState:UIControlStateHighlighted];
 		[thumbsButton setBackgroundImage:buttonN forState:UIControlStateNormal];
@@ -131,7 +132,7 @@
 		UIButton *flagButton = [UIButton buttonWithType:UIButtonTypeCustom];
 
 		flagButton.frame = CGRectMake(rightButtonX, BUTTON_Y, MARK_BUTTON_WIDTH, BUTTON_HEIGHT);
-		//[flagButton setImage:[UIImage imageNamed:@"Reader-Mark-N"] forState:UIControlStateNormal];
+		//[flagButton setImage:[UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Mark-N"] forState:UIControlStateNormal];
 		[flagButton addTarget:self action:@selector(markButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 		[flagButton setBackgroundImage:buttonH forState:UIControlStateHighlighted];
 		[flagButton setBackgroundImage:buttonN forState:UIControlStateNormal];
@@ -141,8 +142,8 @@
 
 		markButton = flagButton; markButton.enabled = NO; markButton.tag = NSIntegerMin;
 
-		markImageN = [UIImage imageNamed:@"Reader-Mark-N"]; // N image
-		markImageY = [UIImage imageNamed:@"Reader-Mark-Y"]; // Y image
+		markImageN = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Mark-N"]; // N image
+		markImageY = [UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Mark-Y"]; // Y image
 
 #endif // end of READER_BOOKMARKS Option
 
@@ -159,7 +160,8 @@
 				UIButton *emailButton = [UIButton buttonWithType:UIButtonTypeCustom];
 
 				emailButton.frame = CGRectMake(rightButtonX, BUTTON_Y, EMAIL_BUTTON_WIDTH, BUTTON_HEIGHT);
-				[emailButton setImage:[UIImage imageNamed:@"Reader-Email"] forState:UIControlStateNormal];
+				[emailButton setImage:[UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Email"]
+                             forState:UIControlStateNormal];
 				[emailButton addTarget:self action:@selector(emailButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 				[emailButton setBackgroundImage:buttonH forState:UIControlStateHighlighted];
 				[emailButton setBackgroundImage:buttonN forState:UIControlStateNormal];
@@ -184,7 +186,8 @@
 				UIButton *printButton = [UIButton buttonWithType:UIButtonTypeCustom];
 
 				printButton.frame = CGRectMake(rightButtonX, BUTTON_Y, PRINT_BUTTON_WIDTH, BUTTON_HEIGHT);
-				[printButton setImage:[UIImage imageNamed:@"Reader-Print"] forState:UIControlStateNormal];
+				[printButton setImage:[UIImage imageNamed:@"PDFReader.bundle/Graphics/Reader-Print"]
+                             forState:UIControlStateNormal];
 				[printButton addTarget:self action:@selector(printButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
 				[printButton setBackgroundImage:buttonH forState:UIControlStateHighlighted];
 				[printButton setBackgroundImage:buttonN forState:UIControlStateNormal];
