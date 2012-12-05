@@ -35,12 +35,17 @@
 
 - (void)dismissReaderViewController:(ReaderViewController *)viewController;
 
+- (void)readerViewController:(ReaderViewController *)viewController changedPage:(NSInteger)page;
+
 @end
 
 @interface ReaderViewController : UIViewController
 
 @property (nonatomic, unsafe_unretained, readwrite) id <ReaderViewControllerDelegate> delegate;
+@property (nonatomic, readonly)                     NSInteger currentPage;
 
 - (id)initWithReaderDocument:(ReaderDocument *)object;
+
+- (void)showDocumentPage:(NSInteger)page;
 
 @end

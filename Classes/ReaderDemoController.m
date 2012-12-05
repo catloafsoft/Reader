@@ -214,4 +214,9 @@
 #endif // DEMO_VIEW_CONTROLLER_PUSH
 }
 
+- (void)readerViewController:(ReaderViewController *)viewController changedPage:(NSInteger)page
+{
+    NSLog(@"Changed to page %d", page);
+}
+
 @end

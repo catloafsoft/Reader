@@ -118,4 +118,9 @@
 	// Do nothing
 }
 
+- (void)readerViewController:(ReaderViewController *)viewController changedPage:(NSInteger)page
+{
+    NSLog(@"Changed to page %d", page);
+}
+
 @end

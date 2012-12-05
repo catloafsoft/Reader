@@ -77,7 +77,7 @@
 		45D5AD9E1610E66B00706B9A /* HISTORY.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HISTORY.md; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Reader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Reader-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		EACFC1191668365E009CBD96 /* PDFReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PDFReader.xcodeproj; path = PDFReader/PDFReader.xcodeproj; sourceTree = "<group>"; };
-		EACFC19516683D3C009CBD96 /* PDFReader.bundle */ = {isa = PBXFileReference; lastKnownFileType = file; name = PDFReader.bundle; path = PDFReader/PDFReader.bundle; sourceTree = "<group>"; };
+		EACFC19516683D3C009CBD96 /* PDFReader.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PDFReader.bundle; path = PDFReader/PDFReader.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

@@ -73,6 +73,7 @@
 #pragma mark Properties
 
 @synthesize delegate;
+@synthesize currentPage;
 
 #pragma mark Support methods
 
@@ -264,6 +265,11 @@
 		[self updateToolbarBookmarkIcon]; // Update bookmark
 
 		currentPage = page; // Track current page number
+        
+        // Tell our delegate if needed
+        if ([delegate respondsToSelector:@selector(readerViewController:changedPage:)]) {
+            [delegate readerViewController:self changedPage:currentPage];
+        }
 	}
 }
 
